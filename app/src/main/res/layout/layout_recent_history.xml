@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Header row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/quicksand_semibold"
+            android:text="@string/label_riwayat_terakhir"
+            android:textColor="@color/color_text_primary"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_lihat_semua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/quicksand_bold"
+            android:letterSpacing="0.05"
+            android:text="@string/label_lihat_semua"
+            android:textColor="@color/color_text_brand"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!-- Transaction list container -->
+    <LinearLayout
+        android:id="@+id/ll_transactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background -->
+    <color name="color_background">#FBF9F8</color>
+    <color name="color_surface">#FFFFFF</color>
+    <color name="color_surface_secondary">#F5F3F3</color>
+
+    <!-- Brand / Peach tones -->
+    <color name="color_peach">#FFDAB9</color>
+    <color name="color_peach_light">#FFEDDC</color>
+    <color name="color_peach_dark">#FEB246</color>
+
+    <!-- Text -->
+    <color name="color_text_primary">#1B1C1C</color>
+    <color name="color_text_secondary">#80756C</color>
+    <color name="color_text_muted">#D2C4B9</color>
+    <color name="color_text_brand">#74593F</color>
+    <color name="color_text_brand_dark">#795E44</color>
+    <color name="color_text_dark">#4F453D</color>
+    <color name="color_text_brand_secondary">#795E44B2</color><!-- 70% opacity -->
+
+    <!-- Transaction states -->
+    <color name="color_income">#2E7D32</color>
+    <color name="color_expense">#BA1A1A</color>
+
+    <!-- Border / Divider -->
+    <color name="color_border_peach">#1A74593F</color><!-- 10% -->
+    <color name="color_divider">#33795E44</color><!-- 20% -->
+    <color name="color_card_border">#33FFDCBE</color><!-- 20% -->
+
+    <!-- FAB -->
+    <color name="color_fab">#FEB246</color>
+    <color name="color_white">#FFFFFF</color>
+</resources>

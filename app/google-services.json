@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "848372474727",
+    "project_id": "sakustats",
+    "storage_bucket": "sakustats.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848372474727:android:f1692d118d77b6b720c5c2",
+        "android_client_info": {
+          "package_name": "com.sakustats"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDITxpMQ5EWC1VBHKL-Ce7cDqwpUfQwGBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

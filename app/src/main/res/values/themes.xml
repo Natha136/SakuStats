@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SakuStats" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_peach_dark</item>
+        <item name="colorPrimaryVariant">@color/color_peach</item>
+        <item name="colorOnPrimary">@color/color_white</item>
+        <item name="colorSecondary">@color/color_text_brand</item>
+        <item name="colorOnSecondary">@color/color_white</item>
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="android:windowBackground">@color/color_background</item>
+        <item name="android:statusBarColor">@color/color_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Top App Bar -->
+    <style name="Widget.SakuStats.TopAppBar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">@color/color_background</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- Balance Card -->
+    <style name="Widget.SakuStats.BalanceCard" parent="">
+        <item name="android:background">@drawable/bg_balance_card</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:padding">32dp</item>
+    </style>
+
+    <!-- Transaction Card -->
+    <style name="Widget.SakuStats.TransactionCard" parent="">
+        <item name="android:background">@drawable/bg_transaction_card</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:padding">17dp</item>
+    </style>
+
+    <!-- Quick Action Button -->
+    <style name="Widget.SakuStats.QuickActionButton" parent="">
+        <item name="android:background">@drawable/bg_quick_action</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <!-- Text: Section Title -->
+    <style name="TextAppearance.SakuStats.SectionTitle" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">@color/color_text_primary</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/quicksand_semibold</item>
+    </style>
+
+    <!-- Text: Balance -->
+    <style name="TextAppearance.SakuStats.Balance" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:textColor">@color/color_text_brand_dark</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:fontFamily">@font/quicksand_bold</item>
+    </style>
+
+    <!-- Text: Label -->
+    <style name="TextAppearance.SakuStats.Label" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">@color/color_text_brand</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:fontFamily">@font/quicksand_bold</item>
+    </style>
+
+    <!-- Text: SubLabel -->
+    <style name="TextAppearance.SakuStats.SubLabel" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:textColor">@color/color_text_secondary</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Text: Body -->
+    <style name="TextAppearance.SakuStats.Body" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/color_text_secondary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- FAB -->
+    <style name="Widget.SakuStats.FAB" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/color_fab</item>
+        <item name="tint">@color/color_white</item>
+        <item name="elevation">10dp</item>
+    </style>
+
+    <!-- Splash Screen Theme (fullscreen, no action bar) -->
+    <style name="Theme.SakuStats.Splash" parent="Theme.SakuStats">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+</resources>

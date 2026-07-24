@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SakuStats</string>
+    <string name="tagline">Catat. Hemat. Bahagia.</string>
+
+    <!-- Login & Register -->
+    <string name="title_welcome_back">Selamat Datang Kembali!</string>
+    <string name="desc_welcome_back">Lacak keuanganmu dengan lembut setiap hari.</string>
+    <string name="title_create_account">Buat Akun SakuStats</string>
+    <string name="desc_create_account">Mulai kelola keuanganmu dengan lebih ceria!</string>
+
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+    <string name="label_nama_lengkap">Nama Lengkap</string>
+    <string name="hint_email">nama@email.com</string>
+    <string name="hint_nama">Siapa namamu?</string>
+    <string name="label_forgot_password">Lupa Password?</string>
+    <string name="btn_login">Masuk</string>
+    <string name="btn_register">Daftar</string>
+    <string name="label_dont_have_account">Belum punya akun? Daftar Sekarang</string>
+    <string name="label_already_have_account">Sudah punya akun? Masuk</string>
+    <string name="label_or">Atau</string>
+    <string name="btn_guest_login">Masuk sebagai Tamu</string>
+    <string name="label_terms">Saya setuju dengan syarat &amp; ketentuan</string>
+
+    <!-- Home Dashboard -->
+    <string name="label_sisa_saldo">Sisa Saldo</string>
+    <string name="label_pemasukan">PEMASUKAN</string>
+    <string name="label_pengeluaran">PENGELUARAN</string>
+    <string name="label_uang_masuk">Uang Masuk</string>
+    <string name="label_uang_keluar">Uang Keluar</string>
+    <string name="label_riwayat_terakhir">Riwayat Terakhir</string>
+    <string name="label_lihat_semua">Lihat Semua</string>
+
+    <!-- Transaction types -->
+    <string name="type_masuk">Masuk</string>
+    <string name="type_keluar">Keluar</string>
+
+    <!-- Empty state -->
+    <string name="empty_state_title">Mau hemat apa hari ini?</string>
+    <string name="empty_state_desc">Catat pengeluaranmu agar si Saku tetap senang!</string>
+
+    <!-- Add Transaction -->
+    <string name="title_add_transaction">Tambah Transaksi</string>
+    <string name="title_add_note">Tambah Catatan</string>
+    <string name="label_nominal">NOMINAL</string>
+    <string name="hint_amount">Jumlah (Rp)</string>
+    <string name="hint_description">Keterangan</string>
+    <string name="hint_description_placeholder">Nasi Goreng, Belanja Bulanan, atau lainnya...</string>
+    <string name="label_today">Hari ini</string>
+    <string name="label_selected_date">Tanggal terpilih</string>
+    <string name="btn_save">Simpan</string>
+    <string name="btn_save_note">Simpan Catatan</string>
+    <string name="btn_cancel">Batal</string>
+
+    <!-- Plan Feature -->
+    <string name="title_plan">Rencana Pengeluaranmu</string>
+    <string name="title_new_budget">Target Baru</string>
+    <string name="title_your_budget">Target Anda</string>
+    <string name="title_details">Detail</string>
+    <string name="label_categories">Kategori</string>
+    <string name="label_amount">Nominal</string>
+    <string name="label_achievement_date">Tanggal Target</string>
+    <string name="label_fund_progress">Progress Dana</string>
+    <string name="label_more_details">Detail Lainnya</string>
+    <string name="label_required_funds">Dana yang Dibutuhkan</string>
+    <string name="label_collected_funds">Dana Terkumpul</string>
+    <string name="label_remaining_time">Sisa Waktu</string>
+    <string name="btn_next">Lanjut</string>
+    <string name="btn_finish">Selesai</string>
+    <string name="btn_add_funds">Tambah Dana</string>
+    <string name="btn_withdraw">Tarik Dana</string>
+    <string name="btn_create_new_budget">Buat Target Baru</string>
+    <string name="empty_plan_desc">Anda belum memiliki target keuangan saat ini.</string>
+    <string name="empty_plan_action">Tekan tombol di atas atau klik di sini untuk membuat target baru.</string>
+    <string name="savings_info_format">Untuk mencapai target, Anda perlu menabung minimal Rp %1$s setiap hari</string>
+
+    <!-- Notification -->
+    <string name="content_description_notification">Notifikasi</string>
+    <string name="content_description_profile">Profil</string>
+    <string name="content_description_add">Tambah Transaksi</string>
+    <string name="content_description_back">Kembali</string>
+    <string name="content_description_calendar">Pilih Tanggal</string>
+</resources>

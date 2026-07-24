@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    tools:context=".EditTransactionActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_background"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_edit"
+            android:layout_width="match_parent"
+            android:paddingTop="24dp"
+            android:layout_height="64dp"
+            app:navigationIcon="@drawable/ic_arrow_left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Detail Transaksi"
+                android:textColor="@color/color_text_brand"
+                android:textSize="22sp"
+                android:layout_gravity="center_horizontal"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingBottom="150dp">
+
+            <!-- Type Toggle -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_type_expense"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_filter_active"
+                    android:backgroundTint="@color/color_text_brand_dark"
+                    android:gravity="center"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text="Keluar"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_type_income"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_filter_inactive"
+                    android:gravity="center"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text="Masuk"
+                    android:textColor="@color/color_text_secondary"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- Jumlah Uang Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Jumlah Uang"
+                android:textColor="@color/color_text_dark"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_input_rounded"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text="Rp"
+                    android:textColor="@color/color_text_brand"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/et_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:background="@null"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textColor="@color/color_text_primary"
+                    android:textSize="32sp" />
+
+            </LinearLayout>
+
+            <!-- Keterangan Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Keterangan"
+                android:textColor="@color/color_text_dark"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_description"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_input_rounded"
+                android:fontFamily="@font/quicksand_regular"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="20dp"
+                android:textColor="@color/color_text_primary"
+                android:textSize="16sp" />
+
+            <!-- Tanggal Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Tanggal"
+                android:textColor="@color/color_text_dark"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_pick_date"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_input_rounded"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_calendar" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:text="11/24/2023"
+                    android:textColor="@color/color_text_primary"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!-- Catatan Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Catatan"
+                android:textColor="@color/color_text_dark"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_note"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_input_rounded"
+                android:fontFamily="@font/quicksand_regular"
+                android:gravity="top"
+                android:padding="20dp"
+                android:textColor="@color/color_text_primary"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@android:color/transparent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Hapus Catatan"
+            android:textAllCaps="false"
+            android:textColor="#BA1A1A"
+            android:textSize="16sp"
+            app:backgroundTint="#FFF1F1"
+            app:cornerRadius="28dp"
+            app:icon="@drawable/ic_history"
+            app:iconGravity="textStart"
+            app:iconTint="#BA1A1A"
+            app:strokeColor="#FFDAD9"
+            app:strokeWidth="1dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Simpan Perubahan"
+            android:textAllCaps="false"
+            android:textColor="@color/color_text_brand_dark"
+            android:textSize="16sp"
+            app:backgroundTint="@color/color_fab"
+            app:cornerRadius="28dp"
+            app:icon="@drawable/ic_check"
+            app:iconGravity="textStart"
+            app:iconTint="@color/color_text_brand_dark" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
