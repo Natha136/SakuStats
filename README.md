@@ -50,7 +50,7 @@ app/
 1. Clone this repository
 
 ```bash
-git clone https://github.com/yourusername/SakuStats.git
+git clone https://github.com/Natha136/SakuStats.git
 ```
 
 2. Open the project in Android Studio.
